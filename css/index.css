@@ -4,6 +4,7 @@
     font-family: Sans-serif;
 }
 
+
 .header{
     display: flex;
     justify-content: space-between;
@@ -24,7 +25,7 @@
 
 .header2 p{
     margin-top: 45px;
-    font-size: larger;
+    font-size: 30px;
 }
 
 .header3 button{
@@ -36,7 +37,6 @@
     color: rgb(86, 86, 187);
     font-weight: bolder;
     border-color: rgb(86, 86, 187);
-    border-width: 3px;
 }
 
 .header3 button:hover{
@@ -48,4 +48,89 @@
     display: flex;
     justify-content: space-between;
     margin-top: 40px;
+}
+
+.leftNav input{
+    border-radius: 25px;
+    height: 30px;
+    width: 300px;
+    text-align: center;
+    background-color: rgb(229, 229, 251);
+    margin-right: 40px;
+    border: 2px solid black;
+}
+
+.leftNav select{
+    border-radius: 25px;
+    height: 30px;
+    width: 200px;
+    background-color: rgb(229, 229, 251);
+    border: 2px solid black;
+    text-align: center;
+}
+
+.leftNav img{
+    width: 20px;
+    position: relative;
+    left: 40px;
+    top: 5px;
+}
+.rightNav button{
+    background-color: transparent;
+    border-radius: 10px;
+    height: 30px;
+    width: 100px;
+    color: rgb(86, 86, 187);
+    font-weight: bolder;
+    border-color: rgb(86, 86, 187);
+    margin: 0px 25px 0px 0px;
+}
+
+.rightNav button:hover{
+    background-color: rgb(86, 86, 187);
+    color: white;
+}
+
+/* Section-1 */
+
+.sec1{
+    display: flex;
+    padding-top: 40px;
+}
+
+.categories{
+    width: 50%;
+    padding-left: 20px;
+}
+
+.categoriesM{
+    margin-bottom: 20px;
+}
+
+.categories h2{
+    font-size: 30px;
+}
+
+.categoriesCards{
+    display: flex;
+    padding-top: 20px;
+}
+
+.categoriesCards content{
+    width: 20px;
+}
+
+.content{
+    width: 30%;
+}
+.content img{
+    width: 40%;
+    border-radius: 50%;
+}
+
+
+/* catImg css */
+
+.catImg{
+    width: 50%;
 }
