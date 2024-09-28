@@ -95,7 +95,7 @@
 
 .sec1{
     display: flex;
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 .categories{
@@ -107,13 +107,34 @@
     margin-bottom: 20px;
 }
 
+.categoriesM:hover{
+    background-color: white;
+    border: 3px solid rgb(86, 86, 187);
+    h2{
+        background-color: rgb(86, 86, 187);
+        color: white;
+    }
+}
+
 .categories h2{
     font-size: 30px;
+    position: relative;
+    padding-left: 30px;
 }
 
 .categoriesCards{
     display: flex;
-    padding-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content:hover{
+    background-color: rgb(229, 229, 251);
+    .serviceName div{
+        background-color: rgb(86, 86, 187);
+        color: white;
+        border: 3px solid black;
+    }
 }
 
 .categoriesCards content{
@@ -122,10 +143,82 @@
 
 .content{
     width: 30%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
 }
 .content img{
-    width: 40%;
+    width: 100px;
     border-radius: 50%;
+    margin-top: 20px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.img{
+    display: flex;
+    justify-content: center;
+}
+
+.serviceName{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    margin: 10px 0px 3px 0px;
+}
+
+
+
+.serviceName div{
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+}
+.serviceName div:hover{
+    background-color: rgb(86, 86, 187);
+    color: white;
+}
+
+.rating{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.rating span{
+    font-size: 50px;
+}
+.rating1{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(229, 229, 251);
+    height: 50px;
+}
+
+.rating2{
+    background-color: rgb(86, 86, 187);
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custRating{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
 }
 
 
