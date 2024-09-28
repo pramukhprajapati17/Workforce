@@ -148,7 +148,7 @@
     flex-direction: column;
 }
 .content img{
-    width: 100px;
+    width: 150px;
     border-radius: 50%;
     margin-top: 20px;
     margin-top: 20px;
@@ -173,13 +173,14 @@
 
 
 .serviceName div{
-    width: 100px;
+    width: 140px;
     height: 40px;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
     border: 2px solid black;
+    border-radius: 10px;
 }
 .serviceName div:hover{
     background-color: rgb(86, 86, 187);
