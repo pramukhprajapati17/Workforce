@@ -228,3 +228,66 @@
 .catImg{
     width: 50%;
 }
+
+
+/* Section 3 */
+
+.sec2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading{
+    text-align: center;
+    font-size: 40px;
+    font-family: sans-serif;
+}
+
+.sec2Cont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    background-color: whitesmoke;
+    height: 350px;
+    border-radius: 10%;
+}
+
+.cards a{
+    text-decoration: none;
+}
+
+.cards a div{
+    text-align: center;
+    color: black;
+    font-family: sans-serif;
+    font-size: larger;
+    font-weight: 300;
+}
+
+.cards a img{
+    width: 250px;
+    height: 200px;
+    border-radius: 10%;
+    padding: 10px 20px 10px 20px;
+}
+
+.cards button{
+    height: 30px;
+    width: 100px;
+    margin-top: 20px;
+    font-size: large;
+}
+
+
+
