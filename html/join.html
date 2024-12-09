@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Worker Force</title>
+    <link rel="stylesheet" href="../css/join.css">
+</head>
+<body>
+
+    <div class="join-form-container">
+        <!-- Logo at the Top -->
+        <div class="logo">
+            <img src="../images/logo.jpg" alt="Worker Force Logo">
+        </div>
+
+        <h1>Join as Worker</h1>
+
+        <!-- Form Begins -->
+        <form action="/submit-join-form" method="POST" enctype="multipart/form-data">
+            <div class="form-section">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required><br>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required><br>
+
+                <label for="govDocument">Government Document ID (Aadhaar, PAN, etc.):</label>
+                <input type="text" id="govDocument" name="govDocument" placeholder="Enter your document ID" required>
+
+                <label for="govIdProof">Upload Government ID Proof:</label>
+                <input type="file" id="govIdProof" name="govIdProof" accept=".jpg, .jpeg, .png, .pdf" required>
+            </div>
+
+            <div class="form-section">
+                <h3>Address Details</h3>
+                <label for="street1">Street 1:</label>
+                <input type="text" id="street1" name="street1" placeholder="Enter street 1" required><br>
+
+                <label for="street2">Street 2 (optional):</label>
+                <input type="text" id="street2" name="street2" placeholder="Enter street 2"><br>
+
+                <label for="village">Village/City:</label>
+                <input type="text" id="village" name="village" placeholder="Enter your village or city" required><br>
+
+                <label for="taluka">Taluka:</label>
+                <input type="text" id="taluka" name="taluka" placeholder="Enter taluka" required>
+
+                <label for="district">District:</label>
+                <input type="text" id="district" name="district" placeholder="Enter district" required>
+
+                <label for="state">State:</label>
+                <input type="text" id="state" name="state" placeholder="Enter state" required>
+
+                <label for="pincode">Pincode:</label>
+                <input type="text" id="pincode" name="pincode" placeholder="Enter pincode" required>
+
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" placeholder="Enter country" required>
+            </div>
+
+            <label for="services">Service You Provide:</label>
+            <select id="services" name="services" required>
+                <option value="" disabled selected>Select a service</option>
+                <option value="Electrician">Electrician</option>
+                <option value="Plumber">Plumber</option>
+                <option value="Baby Care">Baby Care</option>
+                <option value="House Cleaner">House Cleaner</option>
+                <option value="Gardening">Gardening</option>
+                <option value="Cooking">Cooking</option>
+                <option value="Carpet Cleaning">Carpet Cleaning</option>
+                <option value="Moving">Moving</option>
+                <option value="Handyman">Handyman</option>
+            </select>
+
+            <div class="join-button-container">
+                <button type="submit" class="join-button">Join Now</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>

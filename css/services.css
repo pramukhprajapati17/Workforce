@@ -1,0 +1,180 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #E3F2F9; /* Soft Blue/Gray */
+}
+
+/* Header Styles */
+header {
+    background-color: #4DA6A7; /* Teal */
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white; /* White for the logo text */
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* White text for navigation links */
+}
+
+/* Introduction Section */
+.intro {
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #E3F2F9; /* Match the body background */
+}
+
+.intro-content {
+    max-width: 600px;
+}
+
+.intro-content h1 {
+    font-size: 36px;
+    color: #333;
+}
+
+.intro-content p {
+    font-size: 18px;
+    margin: 20px 0;
+    color: #555;
+}
+
+.explore-btn {
+    background-color: #4DA6A7; /* Teal for the button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.explore-btn:hover {
+    background-color: #3D8D8E; /* Dark Teal */
+}
+
+/* Services Section */
+.services {
+    padding: 50px 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.services h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #333;
+}
+
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 services per row */
+    gap: 20px;
+    max-width: 70%;
+
+}
+
+.service-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.service-card h3 {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.service-card p {
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .service-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 services per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .service-container {
+        grid-template-columns: 1fr; /* 1 service per row on very small screens */
+    }
+}
+
+
+/* Footer Styles */
+footer {
+    background-color: #4DA6A7; /* Teal footer */
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-bottom {
+    background-color: #333; /* Dark footer for contrast */
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .service-container {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+}

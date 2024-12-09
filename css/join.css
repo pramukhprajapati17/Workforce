@@ -1,0 +1,150 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the start */
+    padding-top: 50px; /* Add space at the top for larger screens */
+}
+
+/* Form Container */
+.join-form-container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    /* Animation properties */
+    transform: translateY(-20px); /* Start slightly above */
+    opacity: 0; /* Start invisible */
+    animation: slideIn 0.5s forwards; /* Animation */
+}
+
+.join-form-container h1 {
+    text-align: center;
+}
+
+/* Logo */
+.logo {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+/* Form Section Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+input, select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.form-section {
+    margin-bottom: 10px;
+}
+
+/* Join Button */
+.join-button {
+    background-color: #1A4D4F; /* Button color */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.join-button:hover {
+    background-color: #154042; /* Darker shade on hover */
+}
+
+.join-button-container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Animation Keyframes */
+@keyframes slideIn {
+    to {
+        transform: translateY(0); /* Move to the original position */
+        opacity: 1; /* Fade in */
+    }
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    /* Remove top space for mobile view */
+    body {
+        padding-top: 0; /* No top space on smaller screens */
+    }
+
+    /* Adjust form container */
+    .join-form-container {
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    /* Adjust input and select sizes */
+    input, select {
+        font-size: 12px; /* Smaller font size for inputs */
+    }
+
+    .join-button {
+        font-size: 14px; /* Smaller button font size */
+        padding: 10px; /* Adjust button padding */
+    }
+
+    /* Logo size */
+    .logo img {
+        width: 120px; /* Adjust logo size for smaller screens */
+    }
+
+    /* Address Section: Stack components in a column */
+    .form-section {
+        display: flex;
+        flex-direction: column; /* Stack address components in a column */
+    }
+
+    /* Make input fields fill width on small screens */
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="file"],
+    select {
+        width: 100%; /* Ensure inputs and selects take full width */
+    }
+}
+
+@media (max-width: 400px) {
+    /* Further adjustments for very small screens */
+    input, select {
+        font-size: 10px; /* Even smaller font size */
+        padding: 8px; /* Less padding */
+    }
+
+    .join-button {
+        font-size: 12px; /* Smaller button font size */
+        padding: 8px; /* Less padding */
+    }
+}

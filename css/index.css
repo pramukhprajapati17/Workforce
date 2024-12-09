@@ -1,0 +1,390 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #F4F6F7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header {
+    background-color: #1A4D4F;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.auth-buttons button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+
+.auth-buttons .login {
+    background-color: white;
+    color: #4DA6A7;
+    border: 1px solid white;
+}
+
+.auth-buttons .register {
+    background-color: white;
+    color: #4DA6A7;
+}
+
+.auth-buttons button:hover {
+    background-color: #4DA6A7; /* Light Aqua for hover effect */
+    color: white; /* Change text color to white for contrast */
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    height: 100vh; /* Makes the hero section cover the full height of the viewport */
+    background-color: #E3F2F9;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero h1 {
+    font-size: 60px; /* Larger title for more impact */
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.hero p {
+    font-size: 24px; /* Bigger paragraph text */
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.job-search {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+}
+
+.job-search input {
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.job-search button {
+    padding: 15px 30px;
+    background-color: #4DA6A7;
+    color: white;
+    border: none;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.job-search button:hover {
+    background-color: #3D8D8E;
+}
+
+.illustration img {
+    width: 500px; /* Make the image bigger */
+    height: auto;
+}
+
+/* Services Section */
+.services {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.service-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.service-card h3 {
+    font-size: 22px;
+    margin: 15px 0 5px;
+    color: #333;
+}
+
+.service-card p {
+    padding: 0 15px 15px;
+    color: #777;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card:hover img {
+    transform: scale(1.05);
+}
+
+/* More Services Button */
+.more-services {
+    margin-top: 30px;
+}
+
+.more-btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #4DA6A7;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.more-btn:hover {
+    background-color: #3D8D8E;
+    transform: translateY(-5px);
+}
+
+/* Our Thoughts Section */
+.our-thoughts {
+    text-align: center;
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.our-thoughts h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.thoughts-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.thought-card {
+    background-color: #000; /* Black background for the card */
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    position: relative;
+    color: white; /* White text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.thought-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid #fff; /* White border around the image */
+    position: absolute;
+    top: -50px; /* Moves the image upwards outside the card */
+    left: calc(50% - 50px); /* Centers the image */
+}
+
+.thought-content {
+    margin-top: 60px;
+}
+
+.thought-content p {
+    font-size: 16px;
+    font-style: italic;
+    line-height: 1.5;
+    color: #fff;
+}
+
+/* Responsive Design for Thoughts Section */
+@media (max-width: 768px) {
+    .thoughts-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .thought-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 100px;
+    text-align: left;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    margin-right: 30px;
+    min-width: 200px;
+}
+
+.footer-column h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #4DA6A7;
+}
+
+.footer-column p, 
+.footer-column ul {
+    font-size: 14px;
+    color: #bbb;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: white;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    border-top: 1px solid #555;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: #bbb;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+
+    .job-search input {
+        width: 100%;
+    }
+
+    .illustration img {
+        max-width: 80%;
+        margin-top: 20px;
+    }
+
+    .service-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
